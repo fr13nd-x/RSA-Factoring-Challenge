@@ -1,5 +1,3 @@
-//fr13ndx
-//wanna break your head
 #![allow(irrefutable_let_patterns)]
 use std::{env, fs};
 use ramp::int;
@@ -28,7 +26,7 @@ fn main() {
 /* https://stackoverflow.com/a/2274520/9221785 */
 fn look_up(n: &int, ps: &Vec<int>) -> (int, int) {
     for p in ps.iter() {
-                if let (q, r) = n.divmod(p) {
+		if let (q, r) = n.divmod(p) {
             if r == 0 { return (p.clone(), q) };
         }
     }
